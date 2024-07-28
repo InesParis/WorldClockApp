@@ -17,7 +17,6 @@ body {
     rgb(248, 172, 172) 90%,
     rgb(254, 211, 252) 99.7%
   );
-
   padding: 30px;
   border-radius: 4px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -25,14 +24,39 @@ body {
   margin: 60px auto;
   padding: 30px;
 }
+.search {
+  background-color: #ffebea;
+  font-family: sans-serif;
+  font-size: 15px;
+}
 h1 {
   text-align: center;
-  font-family: sans-serif;
-  font-size: 36px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #222;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-template-rows: 27px 0;
+  grid-gap: 20px;
+  align-items: center;
 }
+
+h1:after,
+h1:before {
+  content: " ";
+  display: block;
+  border-bottom: 1px solid #c50000;
+  border-top: 1px solid #c50000;
+  height: 5px;
+  background-color: #f8f8f8;
+}
+
 .city {
   display: flex;
-  margin: 20pxx 0;
+  margin: 20px 0;
   justify-content: space-between;
   padding: 20px 0;
   border-bottom: 1px dashed grey;
@@ -58,6 +82,16 @@ select {
   width: 100%;
   border-radius: 4px;
   padding: 10px;
+}
+
+a {
+  font-family: sans-serif;
+  line-height: 36px;
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: purple;
 }
 
 footer {
