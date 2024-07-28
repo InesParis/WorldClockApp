@@ -23,6 +23,7 @@ function displayCurrentTime(event) {
 function displayCurrentTimeZone(event) {
   let selectedOption = event.target.value;
   let currentTimeZone;
+
   if (selectedOption === "tokyo") {
     currentTimeZone = moment().tz("Asia/Tokyo");
   } else if (selectedOption === "paris") {
