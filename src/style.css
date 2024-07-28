@@ -48,10 +48,10 @@ h1:after,
 h1:before {
   content: " ";
   display: block;
-  border-bottom: 1px solid #c50000;
-  border-top: 1px solid #c50000;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
   height: 5px;
-  background-color: #f8f8f8;
+  background-color: #ffebea;
 }
 
 .city {
